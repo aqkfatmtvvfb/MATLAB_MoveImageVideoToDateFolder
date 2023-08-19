@@ -1,0 +1,4 @@
+# MATLAB_MoveImageVideoToDateFolder
+该脚本用于整理相机或手机拍摄的照片与视频文件
+该脚本的功能是将IMG_yyyymmdd_hhmmss的图片及VID_yyyymmdd_hhmmss的视频存入.\yyyy\yyyymmdd的文件夹中。
+建议先使用 https://github.com/aqkfatmtvvfb/MATLAB_ImageVideoRename 进行重名后使用此脚本。
