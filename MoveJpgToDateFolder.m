@@ -1,12 +1,10 @@
 clc
 clear
-
+script_dir = pwd;
 PhotoFilePatten=('^(IMG|VID)_(?<YMD>\d{8})_(?<HMS>\d{6})');
 
 input_dir = uigetdir('.', 'Pick Photo Directory');
-% input_dir ='C:\Users\wangy\Pictures\PS';
-% output_dir = uigetdir('.', 'Pick Output Directory');
-output_dir ='D:\3 所有照片\按时间整理';
+output_dir = uigetdir('.', 'Pick Output Directory');
 cd(input_dir);
 AllObject=dir();
 AllFile=AllObject([AllObject.isdir]==0);
@@ -31,7 +29,7 @@ for iFile=1:length(AllFile)
         end
     end
 end
-cd('D:\3 所有照片\MoveJpgToDateFolder');
+cd(script_dir);
 
 
 
