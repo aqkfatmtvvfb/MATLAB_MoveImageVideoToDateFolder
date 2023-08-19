@@ -4,7 +4,8 @@ script_dir = pwd;
 PhotoFilePatten=('^(IMG|VID)_(?<YMD>\d{8})_(?<HMS>\d{6})');
 
 input_dir = uigetdir('.', 'Pick Photo Directory');
-output_dir = uigetdir('.', 'Pick Output Directory');
+% output_dir = uigetdir('.', 'Pick Output Directory');
+output_dir='..\按时间整理';
 cd(input_dir);
 AllObject=dir();
 AllFile=AllObject([AllObject.isdir]==0);
